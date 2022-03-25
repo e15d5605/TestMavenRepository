@@ -89,7 +89,6 @@
 				</configuration>
 			</plugin>
 
-			<!--
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
 				<executions>
@@ -102,7 +101,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			-->
 
 			<!--
 			<plugin>
@@ -446,18 +444,6 @@
 								<phase>package</phase>
 								<goals>
 									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<artifactId>maven-source-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>attach-sources</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>jar-no-fork</goal>
 								</goals>
 							</execution>
 						</executions>
