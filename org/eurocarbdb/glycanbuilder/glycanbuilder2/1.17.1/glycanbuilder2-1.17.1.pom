@@ -102,53 +102,6 @@
 				</executions>
 			</plugin>
 
-			<!--
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			-->
-
-			<!--
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.0.0</version>
-				<configuration>
-					<finalName>glycanbuilder2</finalName>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<archive>
-						<manifest>
-							<mainClass>org.eurocarbdb.application.glycanbuilder.GlycanBuilder</mainClass>
-						</manifest>
-						<manifestEntries>
-							<Class-Path>../config/</Class-Path>
-						</manifestEntries>
-					</archive>
-					<attach>false</attach>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			-->
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -428,6 +381,7 @@
 			</dependencies>
 		</profile>
 
+		<!--
 		<profile>
 			<id>make-jar</id>
 			<build>
@@ -451,6 +405,7 @@
 				</plugins>
 			</build>
 		</profile>
+		-->
 
 		<profile>
 			<id>make-fat-jar</id>
